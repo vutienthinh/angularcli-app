@@ -4,13 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { CountryComponentComponent } from './pages/country-component/country-component.component';
+import { PageDirectory } from './app.pagedirectory';
+import _ from "lodash";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CountryComponentComponent
-  ],
+  declarations: _.union([AppComponent], PageDirectory.getPages()),
   imports: [
     BrowserModule,
     FormsModule,
