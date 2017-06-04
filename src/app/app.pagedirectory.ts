@@ -10,5 +10,5 @@ export default class PageDirectory {
 }
 
 export function doSomething() {
-	alert(123);
+	//alert(123);
 }

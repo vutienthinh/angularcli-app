@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import PageDirectory from './app.pagedirectory';
+import { default as PageDirectory} from './app.pagedirectory';
+//import PageDirectory from './app.pagedirectory';
 import _ from "lodash";
 
 @NgModule({

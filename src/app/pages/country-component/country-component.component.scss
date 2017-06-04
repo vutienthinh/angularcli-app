@@ -1,6 +1,28 @@
+
+$main-color: #abcdef;
+$main-border: 1px solid $main-color;
+@mixin big-text {
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+%animation {
+	//@include transform(translateY(50%) scale(0.5));
+	transform: translateY(50%) scale(1.5);
+}
 .country-wrapper {
-	background-color: green;
+	//background-color: green;
+	border: $main-border;
+	&:hover {
+		background-color: $main-color;
+	}
 	p 	{
 		color: red;
+		@include big_text;
+		&:hover {
+			//background-color: lighten($main-color, 70%);
+			//background-color: darken($main-color, 70%);
+			background-color: complement($main-color);
+		}
 	}
+	@extend %animation;
 }
