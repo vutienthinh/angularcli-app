@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CountryComponentComponent } from '../app/pages/country-component/country-component.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   entryComponents: [CountryComponentComponent],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'app works!';

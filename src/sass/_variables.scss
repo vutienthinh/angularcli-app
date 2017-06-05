@@ -1,0 +1,8 @@
+$body-color: orange;
+body {
+	color : $body-color;
+}
+
+.country-wrapper {
+	background-color: $body-color!important;
+}
