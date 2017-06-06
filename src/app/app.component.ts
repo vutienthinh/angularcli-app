@@ -6,7 +6,7 @@ import { CountryComponentComponent } from '../app/pages/country-component/countr
   templateUrl: './app.component.html',
   /*styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None,*/
-  styles: [require('../sass/main.scss').toString()],
+  styles: [String(require('../sass/main.scss'))],
   entryComponents: [CountryComponentComponent],
 })
 export class AppComponent {
