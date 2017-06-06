@@ -4,9 +4,10 @@ import { CountryComponentComponent } from '../app/pages/country-component/countr
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  /*styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None,*/
+  styles: [require('../sass/main.scss').toString()],
   entryComponents: [CountryComponentComponent],
-  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'app works!';

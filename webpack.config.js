@@ -59,7 +59,24 @@ module.exports = {
                 loader: "css-loader" // translates CSS into CommonJS
             }, {
                 loader: "sass-loader" // compiles Sass to CSS
-            }]
+            },
+
+            {
+                test: /app\.component\.scss/,
+                loaders: [
+                    ExtractTextPlugin.extract({
+                        loader: "exports-loader?module.exports.toString()"
+                    }),
+                {
+                    loader: "css-loader",
+                    options: {
+                        importLoaders: 2
+                    }
+                },
+                    "sass-loader"
+                ]
+            }
+            ]
         }]
     },
     "module": {
