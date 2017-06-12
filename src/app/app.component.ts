@@ -6,8 +6,9 @@ import { CountryComponentComponent } from '../app/pages/country-component/countr
   templateUrl: './app.component.html',
   /*styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None,*/
-  styles: [String(require('../sass/main.scss'))],
+  //styles: [String(require('../sass/main.scss'))],
   entryComponents: [CountryComponentComponent],
+  //encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'app works!';
