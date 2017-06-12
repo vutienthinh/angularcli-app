@@ -493,6 +493,12 @@ body {
   width: 1px; }
 
 body {
+  color: orange; }
+
+.country-wrapper {
+  background-color: orange !important; }
+
+body {
   color: pink; }
 
 .country-wrapper {
@@ -503,3 +509,16 @@ body {
 
 a[href*='http://']:hover, [href*='http://'].hoverlink {
   text-decoration: underline; }
+
+/*$padding: 10;
+
+.top {
+	$padding: 30 !global;
+	padding: $padding;
+}
+
+.bottom {
+	padding: $padding;
+}*/
+.bottom {
+  padding: 80; }

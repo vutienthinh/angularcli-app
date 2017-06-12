@@ -34,6 +34,8 @@
 @import
 'themes/default';
 
+
+@import 'variables';
 $body-color: pink;
 body {
 	color : $body-color;
@@ -60,4 +62,21 @@ a {
 			text-decoration: underline;
 		}
 	}
+}
+
+/*$padding: 10;
+
+.top {
+	$padding: 30 !global;
+	padding: $padding;
+}
+
+.bottom {
+	padding: $padding;
+}*/
+
+$padding: 50 !default;
+
+.bottom {
+	padding: $padding;
 }

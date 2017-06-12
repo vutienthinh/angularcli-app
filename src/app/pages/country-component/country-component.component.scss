@@ -25,4 +25,10 @@ $main-border: 1px solid $main-color;
 		}
 	}
 	@extend %animation;
+
+	@for $i from 1 to 5 {
+		ul li:nth-child(#{$i}) {
+			background-color: darken($main-color, ((($i - 1) * 25) * 1%));
+		}
+	}
 }
